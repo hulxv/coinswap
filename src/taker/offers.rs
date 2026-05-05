@@ -612,7 +612,7 @@ impl OfferBook {
 
 /// Synchronizes the offer book with specific maker addresses.
 /// Tries legacy first, then taproot.
-pub(crate) fn fetch_offer_from_makers(
+pub fn fetch_offer_from_makers(
     maker_addresses: Vec<MakerAddress>,
     socks_port: u16,
 ) -> Result<Vec<OfferAndAddress>, TakerError> {
